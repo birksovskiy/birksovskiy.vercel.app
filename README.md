@@ -6,6 +6,7 @@ My personal one-page website with links. Made as first TypeScript + React projec
 
 ## Libraries/tools used:
 
- - [tsParticles](https://particles.js.org/) (for background)
- - [FontAwesome](https://fontawesome.com/) (for social buttons)
- - [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) (for name animation)
+ - Background: [tsParticles](https://particles.js.org/)
+ - Icons: [FontAwesome](https://fontawesome.com/)
+ - Name animation: [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg)
+    - Font: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
