@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import { FC, useCallback } from 'react';
 
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
@@ -11,7 +11,7 @@ import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import links from './links.json';
 import particlesOptions from './particles.json';
 
-const App = () => {
+const App: FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
       await loadFull(engine);
   }, []);
@@ -30,25 +30,23 @@ const App = () => {
           />
         </a>
         I'm real, but not everyone is
-        <p>
+        <p className="link-block">
           <a title="GitHub" href={ links.github_profile }>
             <FontAwesomeIcon
               icon={ faGithub }
-              size="xl"
-              style={{marginRight: "10px"} as React.CSSProperties}
+              size="2xl"
             />
           </a>
           <a title="Telegram" href={ links.telegram_channel }>
             <FontAwesomeIcon
               icon={ faTelegram }
-              size="xl"
-              style={{marginLeft: "10px"} as React.CSSProperties}
+              size="2xl"
             />
           </a>
         </p>
       </header>
     </div>
     );
-}
+};
 
 export default App;
