@@ -2,7 +2,7 @@
 [Visit website](https://birksovskiy.vercel.app/)
 
 ## About project
-My personal one-page website with links. Made as first TypeScript + React project.
+My personal website. Made with TypeScript + React.
 
 ## Libraries/tools used:
 
