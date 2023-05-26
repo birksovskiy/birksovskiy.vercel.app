@@ -1,6 +1,6 @@
 {
   "short_name": "birksovskiy",
-  "name": "birksovskiy's one-page website",
+  "name": "Pavel Biryukov (birksovskiy)",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#4b0082",
   "background_color": "#1e1e1e"
 }
