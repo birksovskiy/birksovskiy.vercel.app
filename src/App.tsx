@@ -1,20 +1,21 @@
-import { FC, useCallback } from 'react';
+import { FC, useCallback } from 'react'
 
-import Particles from 'react-particles';
-import { loadFull } from 'tsparticles';
-import { ISourceOptions } from 'tsparticles-engine';
-import type { Engine } from 'tsparticles-engine';
+import Particles from 'react-particles'
+import { loadFull } from 'tsparticles'
+import { ISourceOptions } from 'tsparticles-engine'
+import type { Engine } from 'tsparticles-engine'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTelegram, faMastodon } from '@fortawesome/free-brands-svg-icons'
 
-import links from './links.json';
-import particlesOptions from './particles.json';
+import links from './links.json'
+import particlesOptions from './particles.json'
+
+import Link from './components/Link/Link'
 
 const App: FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-      await loadFull(engine);
-  }, []);
+      await loadFull(engine)
+  }, [])
 
   return (
     <div className='app'>
@@ -30,23 +31,14 @@ const App: FC = () => {
           />
         </a>
         I'm real, but not everyone is
-        <p className="link-block">
-          <a title="GitHub" href={ links.github_profile }>
-            <FontAwesomeIcon
-              icon={ faGithub }
-              size="2xl"
-            />
-          </a>
-          <a title="Telegram" href={ links.telegram_channel }>
-            <FontAwesomeIcon
-              icon={ faTelegram }
-              size="2xl"
-            />
-          </a>
+        <p>
+          <Link name="GitHub" icon={ faGithub } link={ links.github_profile } />
+          <Link name="Mastodon" icon={ faMastodon } link={ links.mastodon_profile } />
+          <Link name="Telegram" icon={ faTelegram } link={ links.telegram_channel } />
         </p>
       </header>
     </div>
-    );
-};
+    )
+}
 
-export default App;
+export default App

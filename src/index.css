@@ -12,17 +12,6 @@
     color: white;
 }
 
-.link-block a {
-    color: #ffffff;
-    margin-inline: 10px;
-    transition-duration: 0.35s;
-}
-
-.link-block a:hover {
-    font-size: 125%;
-    color: #aaaaaa;
-}
-
 #tsparticles {
     position: fixed;
     height: 100%;
@@ -41,4 +30,4 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
