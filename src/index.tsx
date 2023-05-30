@@ -1,9 +1,9 @@
-import { StrictMode } from 'react';
-import { render } from 'react-dom';
+import { StrictMode } from 'react'
+import { render } from 'react-dom'
 
-import './index.css';
+import './index.css'
 
-import App from './App';
+import App from './App'
 
 render(
   <StrictMode>
@@ -11,4 +11,4 @@ render(
   </StrictMode>,
     
   document.getElementById('root')
-);
+)
